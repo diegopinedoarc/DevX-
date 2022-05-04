@@ -134,11 +134,13 @@ html {
         border-radius: 1rem;
         background: var(--crimson);
         box-shadow: 2px 2px 2px 1px var(--spaceCadet);
+        
 
     }
     .btn_contacto a {
         color: var(--cultured);
         text-decoration: none;
+        font-size: 1rem;
     }
     .sec2 {
         display: flex;
@@ -288,6 +290,7 @@ html {
         color: var(--spaceCadet);
         font-size: 3rem;
         font-style: italic;
+        text-align: center;
         
     }
     .btn_enviar {
@@ -552,7 +555,7 @@ html {
     .subCajaContacto {
         display: flex;
         justify-content: space-around;
-        gap: 10rem;
+        gap: 2rem;
     }
     .imgcontacto {
         width: 300px;
@@ -564,12 +567,14 @@ html {
     .box_contacto {
         display: flex;
         flex-direction: column;
+        align-items: center;
+        justify-content: center;
         gap: 1rem;
         padding: 1rem;
     }
 
     .box_contacto input {
-        width: 26rem;
+        width: 22rem;
         height: 2.5rem;
         color: var(--spaceCadet);
         font-size: 1rem;
@@ -579,12 +584,12 @@ html {
     }
     .titu_contacto {
         color: var(--spaceCadet);
-        font-size: 3rem;
+        font-size: 2.5rem;
         font-style: italic;
         
     }
     .btn_enviar {
-        width: 26rem;
+        width: 22rem;
         height: 4rem;
         background: var(--spaceCadet);
         border: none;
