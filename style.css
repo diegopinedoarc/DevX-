@@ -38,59 +38,116 @@ html {
         font-family: var(--font1);
     }
     .header {
-        display: flex;    
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;       
+        position: fixed;
+        top: 0px;       
+        height: 7.5rem;
         background: var(--spaceCadet);
         width: 100%;
-        
-        
-        
-
+        display: flex; 
+        justify-content: center;     
     }
     /* ------------menu y nav---------------------- */
+    .box_Menu {
+        position: fixed;
+        height: 10vh;
+        width: 75px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
 
-    .menu-btn {
+        justify-content: center;
+        transition: 0.3s ease;
+        text-align: center;
         
-        cursor: pointer;
-        color: var(--imperialRed);
-        font-size: 2rem;
-        margin-bottom: 0.5rem;
     }
-    .menu-toogle:checked + .navBarUl {
-        display: block;
-      
-    }
-    .menu-toogle {
-        display: none;
-
-    }
-    .navBarUl {
-        display: none;
-        margin-top: 1.2rem;
+    .box_Menu ul li {
         list-style: none;
-
+        cursor: pointer;
+        
+        transform: translateY(-32rem);
+        transition: transform 0.6s ease;
+    }
+    .box_Menu ul li:hover {
+        color: var(--crimson);
     }
     
-    .navBarLi {
-        padding: 0.6rem;        
-        margin: 1rem;
-        text-align: center;
-        border-radius: 12px;
+    #menu-toogle {
+        display: none;
+    }
+    
+    .rayas {
+        background: var(--crimson);
+        height: 5px;
+        width: 35px;
+        margin: 5px;
+        transition: transform 0.5s;
+    }
         
+    .menu_Hamburguesa {
+        position: fixed;
+        top: 0.3rem;
+        left: 1.2rem;
+        cursor: pointer;
+        transition: 0.3s ease;
+        z-index: 99;
+    
     }
-    .navBarLi a {
+    .menu_Hamburguesa:hover div {
+        background: black;
+    }
+    
+    .menu-toogle:checked ~ .box_Menu {
+        height: 100vh;
+        width: 100%;
+        background:var(--spaceCadet);
+        z-index: 1;
+        opacity: 90%;
+        position: fixed;
+        left: 0px;
+    }
+    .menu-toogle:checked ~ label {
+        left: 20rem;
+    }
+    
+    .menu-toogle:checked ~ .box_Menu ul li {
+        transform: translateY(-8rem);
+        opacity: 1;
+    }
+    
+    .menu-toogle:checked ~ label > div:nth-child(1) {
+        transform: rotate(45deg);
+        margin-top: 18px;
+     
+      }
+      
+      .menu-toogle:checked ~  label > div:nth-child(2) {
+        opacity: 0;
+      }
+      
+      .menu-toogle:checked ~ label > div:nth-child(3) {
+        transform: rotate(-45deg);
+        margin-top: -20px;
+       
+      }
+    .li_Menu a {
         text-decoration: none;
-        color: var(--imperialRed);
-        font-size: 1.5rem;
-
+        color: var(--cultured);
+        font-size: 1.2rem;
     }
+    .li_Menu {
+        padding: 0.5rem;
+        text-align: center;
+    }
+  
 
     .logo {
         border-radius: 1rem;
-        width: 160px;
-        height: 160px;
+        width: 90px;
+        height: 90px;
+        
+        
+
+        
     }
     /* -----------Main----------------------- */
     .main {
@@ -330,33 +387,32 @@ html {
         background: var(--spaceCadet);
         width: 100%;
         
+        
 
     }
     .logo {
         border-radius: 1rem;
-        width: 160px;
-        height: 160px;
+        width: 90px;
+        height: 90px;
     }
     
     .menu-btn {        
         display: none;
     }
-    .fa-bars {
-        display: none;
-    }
+    
     .menu-toogle {
         display: none;
     }
-    .navBarUl {
+    .ul_Menu {
         display: flex;
         list-style: none;
         padding: 15px;
         
 
     }
-    .navBarLi {
+    .li_Menu {
         margin: 15px;
-        font-size: 1.5rem;
+        font-size: 1.4rem;
         padding: 10px;        
         text-align: center;
         border-radius: 12px;
@@ -364,12 +420,12 @@ html {
         
     }
     
-    .navBarLi a {
+    .li_Menu a {
         text-decoration: none;
         color: var(--imperialRed);
     }
-    .navBarLi a:hover {
-        font-size: 1.8rem;
+    .li_Menu a:hover {
+        font-size: 1.6rem;
         color: var(--cultured);
         transition: all 0.4s ease ;
     }
@@ -629,8 +685,8 @@ html {
     }
     .logo {
         border-radius: 1rem;
-        width: 180px;
-        height: 180px;
+        width: 100px;
+        height: 100px;
     }
     
     
@@ -643,14 +699,14 @@ html {
     .menu-toogle {
         display: none;
     }
-    .navBarUl {
+    .ul_Menu {
         display: flex;
         list-style: none;
         padding: 15px;
         
 
     }
-    .navBarLi {
+    .li_Menu {
         margin: 15px;
         font-size: 1.5rem;
         padding: 10px;        
@@ -660,11 +716,11 @@ html {
         
     }
     
-    .navBarLi a {
+    .li_Menu a {
         text-decoration: none;
         color: var(--imperialRed);
     }
-    .navBarLi a:hover {
+    .li_Menu a:hover {
         font-size: 1.8rem;
         color: var(--cultured);
     }
@@ -689,7 +745,7 @@ html {
     .btn_contacto:hover {
         width: 22rem;
         height: 10rem;
-        transition: all 0.3s ease;
+        transition: all 0.6s ease;
         transform: rotate(15deg);
         
     }
@@ -730,6 +786,7 @@ html {
     .box_sec2:hover {
         width: 20rem;
         height: 12rem;
+        transition: all 0.3s ease;
     }
     .seccioninfo {
         display: flex;
@@ -792,16 +849,19 @@ html {
     .box1_sec3:hover {
         width: 24rem;
         font-size: 1.2rem;
+        transition: all 0.3s ease;
 
     }
     .box2_sec3:hover {
         width: 24rem;
         font-size: 1.2rem;
+        transition: all 0.3s ease;
 
     }
     .box3_sec3:hover {
         width: 24rem;
         font-size: 1.2rem;
+        transition: all 0.3s ease;
 
     }
     .footer {
