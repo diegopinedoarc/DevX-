@@ -93,7 +93,7 @@ html {
     
     }
     .menu_Hamburguesa:hover div {
-        background: black;
+        background: var(--crimson);
     }
     
     .menu-toogle:checked ~ .box_Menu {
