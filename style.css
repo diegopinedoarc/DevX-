@@ -258,6 +258,7 @@ html {
         color: var(--cultured);
         box-shadow: 2px 2px 2px 1px var(--crimson);
         text-align: center;
+        margin: 0.5rem;
       
     }
     .sec3 {
@@ -375,6 +376,7 @@ html {
         text-align: center;
         border-radius: 10px;
         box-shadow: 2px 2px 2px 1px var(--black);
+        margin: 0.5rem;
     }
     .titu_contacto {
         color: var(--spaceCadet);
@@ -435,6 +437,7 @@ html {
         text-align: center;
         box-shadow: 2px 2px 2px 1px var(--spaceCadet);
         border-radius: 12px;
+        margin: 0.5rem;
         
     }
     .boxclient h2 {
@@ -620,6 +623,7 @@ html {
         color: var(--cultured);
         box-shadow: 2px 2px 2px 1px var(--crimson);
         text-align: center;
+        margin: 0.5rem;
     }
     .seccioninfo {
         display: flex;
@@ -635,14 +639,14 @@ html {
         align-items: center;
         justify-content: flex-end;
         text-align: center;
-        width: 16rem;
-        height: 20rem;
+        width: 15rem;
+        height: 22rem;
         padding: 5px;
         background: url(./imagenes/tarjeta1.png);
         border-top-left-radius: 8px;
         border-top-right-radius: 8px;
         border: solid 0.8px var(--morningblue);
-        margin-bottom: 2rem;
+        margin: 0.5rem;
         box-shadow: 2px 2px 2px 1px var(--crimson);
     }
     .box2_sec3 {
@@ -651,14 +655,14 @@ html {
         align-items: center;
         justify-content: flex-end;
         text-align: center;
-        width: 16rem;
-        height: 20rem;
+        width: 15rem;
+        height: 22rem;
         padding: 5px;
         background: url(./imagenes/tarjeta2.png);
         border-top-left-radius: 8px;
         border-top-right-radius: 8px;
         border: solid 0.8px var(--morningblue);
-        margin-bottom: 2rem;
+        margin: 0.5rem;
         box-shadow: 2px 2px 2px 1px var(--crimson);
     }
     .box3_sec3 {
@@ -667,14 +671,14 @@ html {
         align-items: center;
         justify-content: flex-end;
         text-align: center;
-        width: 16rem;
-        height: 20rem;
+        width: 15rem;
+        height: 22rem;
         padding: 5px;
         background: url(./imagenes/tarjeta3.png);
         border-top-left-radius: 8px;
         border-top-right-radius: 8px;
         border: solid 0.8px var(--morningblue);
-        margin-bottom: 2rem;
+        margin: 0.5rem;
         box-shadow: 2px 2px 2px 1px var(--crimson);
     }
     .tituboxsec3 {
@@ -722,6 +726,7 @@ html {
         justify-content: center;
         gap: 1rem;
         padding: 1rem;
+        
     }
 
     .box_contacto input {
@@ -732,6 +737,7 @@ html {
         text-align: center;
         border-radius: 10px;
         box-shadow: 2px 2px 2px 1px var(--black);
+        margin: 0.5rem;
     }
     .titu_contacto {
         color: var(--spaceCadet);
@@ -789,6 +795,7 @@ html {
         text-align: center;
         box-shadow: 2px 2px 2px 1px var(--spaceCadet);
         border-radius: 12px;
+        margin: 0.5rem;
         
     }
     .boxclient h2 {
@@ -938,6 +945,7 @@ html {
         color: var(--cultured);
         box-shadow: 2px 2px 2px 1px var(--crimson);
         text-align: center;
+        margin: 0.5rem;
     }
     .box_sec2:hover {
         width: 20rem;
@@ -949,7 +957,8 @@ html {
     }
     .contenedor_info {
         display: flex;
-        gap: 2rem;
+        
+        
     }
    
     
@@ -969,6 +978,7 @@ html {
         border: solid 0.8px var(--morningblue);
         margin-bottom: 2rem;
         box-shadow: 2px 2px 2px 1px var(--crimson);
+        margin: 2rem;
     }
     .box2_sec3 {
         display: flex;
@@ -983,7 +993,7 @@ html {
         border-top-left-radius: 8px;
         border-top-right-radius: 8px;
         border: solid 0.8px var(--morningblue);
-        margin-bottom: 2rem;
+        margin: 2rem;
         box-shadow: 2px 2px 2px 1px var(--crimson);
     }
     .box3_sec3 {
@@ -999,7 +1009,7 @@ html {
         border-top-left-radius: 8px;
         border-top-right-radius: 8px;
         border: solid 0.8px var(--morningblue);
-        margin-bottom: 4rem;
+        margin: 2rem;
         box-shadow: 2px 2px 2px 1px var(--crimson);
     }
     .box1_sec3:hover {
@@ -1098,6 +1108,7 @@ html {
         align-items: center;
         margin-bottom: 3rem;
         gap: 1rem;
+        margin: 1rem;
 
     }
     .clientes h2 {
@@ -1122,6 +1133,7 @@ html {
         align-items: center;
         justify-content: center;
         text-align: center;
+        margin: 0.5rem;
         box-shadow: 2px 2px 2px 1px var(--spaceCadet);
         border-radius: 12px;
         animation-name: latido2;
